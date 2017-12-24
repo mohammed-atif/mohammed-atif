@@ -1,13 +1,1 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-#IntelliJ Generated
-.idea
-
-# dependencies
-node_modules
-
-# misc
-.DS_Store
-.env
-npm-debug.log
-package-lock.json
+.idea/
