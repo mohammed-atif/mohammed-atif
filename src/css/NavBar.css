@@ -1,11 +1,12 @@
 .NavBar {
 	position: fixed;
 	height: 100%;
-	width: -20px;
+	width: 180px;
+	margin-left: -200px;
 	text-align: left;
 	background-color: #006064;
 	padding-top: 20px;
-	width: 200px;
+	padding-left: 20px;
 	top : 40px;
 	color: #fff;
 	z-index: 4;

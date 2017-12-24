@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Header from './Header';
-import './index.css';
+import App from './js/App';
+import Header from './js/Header';
+import './css/index.css';
 
 class Main extends Component {
 	render() {

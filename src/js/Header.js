@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './Nav';
-import './Header.css';
+import '../css/Header.css';
 
 class Header extends Component {
 
@@ -8,7 +8,7 @@ class Header extends Component {
 		super();
 		this.state = {
 			navBarState : false,
-			navBarWidth : "0px"
+			navBarMarginLeft : "-200px"
 		}
 		this.ExpandNavBar = this.ExpandNavBar.bind(this);
 	}
@@ -19,14 +19,12 @@ class Header extends Component {
 		if(this.state.navBarState){
 			this.setState({
 				navBarState : false,
-				navBarWidth : "0px",
-				navBarPadding : "0px"
+				navBarMarginLeft : "-200px"
 			});
 		}else{
 			this.setState({
 				navBarState : true,
-				navBarWidth : "200px",
-				navBarPadding : "20px"
+				navBarMarginLeft : "0px"
 			});
 		}
 	}
@@ -37,7 +35,7 @@ class Header extends Component {
 				<div className="Header-banner">
 					<h1 className="Header-text" onClick={ this.ExpandNavBar }>&#9776; Mohammed Atif</h1>
 				</div>
-				<NavBar width={this.state.navBarWidth} paddingLeft={this.state.navBarPadding} />
+				<NavBar marginLeft={this.state.navBarMarginLeft} />
 			</div>
 		);
 	}
